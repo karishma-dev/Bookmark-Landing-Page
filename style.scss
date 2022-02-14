@@ -1,0 +1,120 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+/* Color */
+:root{
+
+     /* Primary */
+    --Soft-Blue: hsl(231, 69%, 60%);
+    --Soft-Red: hsl(0, 94%, 66%);
+
+    /* Neutral */
+    --Grayish-Blue: hsl(229, 8%, 60%);
+    --Very-Dark-Blue: hsl(229, 31%, 21%);
+
+    /* - Font size: 18px
+
+    - Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+    - Weights: 400, 500 */
+
+}
+
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* Navigation Bar */
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item{
+    margin: 0 20px;
+
+    a{
+        color: var(--Grayish-Blue);
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+}
+
+/* Header */
+header{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin: 0 17vw;
+    align-items: center;
+    padding: 70px 0px;
+}
+.header-img{
+    background: url("images/illustration-hero.svg");
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+}
+#header-heading{
+    font-size: 3rem;
+    color: var(--Very-Dark-Blue);
+}
+.header-desc{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: var(--Grayish-Blue);
+    margin: 40px 0;
+}
+.blue-link{
+    background-color: var(--Soft-Blue);
+    padding: 12px 25px;
+    color: white;
+    border: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 20px;
+}
+.white-link{
+    background-color: white;
+    padding: 12px 25px;
+    color: var(--Grayish-Blue);
+    border: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.search-container, .sharing-container{
+    display: none;
+}
+.main-title{
+    margin: 0 auto;
+    text-align: center;
+}
+.main-desc{
+    margin: 0 auto;
+    width: 25%;
+    color: var(--Grayish-Blue);
+}
+/* attribution */
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
