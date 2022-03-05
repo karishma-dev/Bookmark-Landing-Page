@@ -9,12 +9,12 @@
   <title>Bookmark landing page</title>
 </head>
 <body>
-
+  
   <!-- Navigation Bar -->
-  <nav>
+  <nav class="grid-container">
 
     <!-- Logo -->
-    <a href=""><img src="images/logo-bookmark.svg" alt="Bookmark logo"></a>
+    <a href="" id="nav-logo"><img src="images/logo-bookmark.svg" alt=""></a>
 
     <!-- Navigation Menu -->
     <ul class="nav-menu">
@@ -33,23 +33,34 @@
           Contact
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" id="login">
         <a href="">
           Login
         </a>
       </li>
     </ul>
+
+    <div class="social-link" id="social-nav">
+      <a href=""><img src="images/icon-facebook.svg" alt=""></a>
+      <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+    </div>
+
+    <span class="hamburger"></span>
+
   </nav>
   
   <!-- Header -->
-  <header>
+  <header class="grid-container">
 
+    <!-- Header Image -->
+    <img src="images/illustration-hero.svg" alt="" class="header-img col-6">
+    <div class="blue-bg"></div>
     <!-- Header Text -->
-    <div class="header-text">
-      <h1 id="header-heading">
+    <div class="header-text col-6">
+      <h1 class="header-heading heading-color">
         A Simple Bookmark Manager
       </h1>
-      <p class="header-desc">
+      <p class="header-desc desc-color">
         A clean and simple interface to organize your favourite websites. Open a new 
         browser tab and see your sites load instantly. Try it for free.
       </p>
@@ -64,39 +75,42 @@
       </div>
     </div>
 
-    <!-- Header Image -->
-    <div class="header-img"></div>
   </header>
-
+  
   <!-- Main -->
-  <main>
-    <div class="main-title">
-      <h2 class="main-heading">
+  <main class="grid-container">
+
+    <div class="main-title col-12">
+      <h2 class="main-heading heading-color">
         Features
       </h2>
-      <p class="main-desc">
+      <p class="main-desc desc-color">
          Our aim is to make it quick and easy for you to access your favourite websites. 
         Your bookmarks sync between your devices so you can access them on the go.
       </p>
     </div>
 
-    <div class="main-col-titles">
-      <span>
-        Simple Bookmarking
-      </span>
-      <span>
-        Speedy Searching
-      </span>
-      <span>
-        Easy Sharing
-      </span>
+    <div class="main-col-titles col-12">
+      <div class="main-col-title active" data-position="0">
+          Simple Bookmarking
+      </div>
+      <div class="main-col-title" data-position="1">
+          Speedy Searching
+      </div>
+      <div class="main-col-title" data-position="2">
+          Easy Sharing
+      </div>
     </div>
-    <div class="bookmarking-container">
-      <div class="bookmarking-text">
-        <h2 class="main-col-heading">
+
+    <div class="main-col-container col-12 grid-container">
+
+      <img src="images/illustration-features-tab-1.svg" alt="" class="header-img col-6">
+      <div class="blue-bg main-blue-bg"></div>
+      <div class="main-col-text col-6" id="bookmarking">
+        <h2 class="main-col-heading heading-color">
           Bookmark in one click
         </h2>
-        <p class="main-col-desc">
+        <p class="main-col-desc desc-color">
           Organize your bookmarks however you like. Our simple drag-and-drop interface 
           gives you complete control over how you manage your favourite sites.
         </p>
@@ -106,84 +120,58 @@
       </div>
     </div>
 
-    <div class="search-container">
-      <div class="search-text">
-        <h2 class="main-col-heading">
-          Intelligent search
-        </h2>
-        <p class="main-col-desc">
-          Our powerful search feature will help you find saved sites in no time at all. 
-          No need to trawl through all of your bookmarks.
-        </p>
-        <a href="" class="more-info-btn blue-link">
-          More Info
-        </a>
-      </div>
-    </div>
-
-    <div class="sharing-container">
-      <div class="sharing-text">
-        <h2 class="main-col-heading">
-          Share your bookmarks
-        </h2>
-        <p class="main-col-desc">
-          Easily share your bookmarks and collections with others. Create a shareable 
-         link that you can send at the click of a button.
-        </p>
-        <a href="" class="more-info-btn blue-link">
-          More Info
-        </a>
-      </div>
-    </div>
   </main>
 
   <!-- Section -->
-  <section class="download-container">
-    <div class="download-text">
-      <h2 class="download-heading">
+  <section class="download-container grid-container">
+    <div class="download-text col-12">
+      <h2 class="download-heading heading-color">
         Download the extension
       </h2>
-      <p>
+      <p class="desc-color main-desc">
         We’ve got more browsers in the pipeline. Please do let us know if you’ve 
         got a favourite you’d like us to prioritize.
       </p>
     </div>
 
-    <div class="download-cards">
+    <div class="download-cards col-12">
       <div class="download-card">
         <img src="images/logo-chrome.svg" alt="">
-        <span class="download-card-heading">
+        <span class="download-card-heading heading-color">
           Add to Chrome
         </span>
         <span class="download-card-subtitle">
           Minimum version 62
         </span>
+        <hr class="download-card-border">
         <a href="" class="download-card-link blue-link">
           Add & Install Extension
         </a>
       </div>
 
-      <div class="download-card">
+      <div class="download-card" id="firefox">
         <img src="images/logo-firefox.svg" alt="">
-        <span class="download-card-heading">
+        <span class="download-card-heading heading-color">
           Add to Firefox
         </span>
         <span class="download-card-subtitle">
           Minimum version 55
         </span>
+        <hr class="download-card-border">
         <a href="" class="download-card-link blue-link">
           Add & Install Extension
         </a>
       </div>
 
-      <div class="download-card">
+      <div class="download-card" id="opera">
         <img src="images/logo-opera.svg" alt="">
-        <span class="download-card-heading">
+        <span class="download-card-heading heading-color">
           Add to Opera
         </span>
         <span class="download-card-subtitle">
           Minimum version 46
         </span>
+        <hr class="download-card-border">
         <a href="" class="download-card-link blue-link">
           Add & Install Extension
         </a>
@@ -191,19 +179,19 @@
     </div>
   </section>
 
-  <section class="faq-container">
-    <div class="faq-title">
-      <h2>
+  <section class="faq-container grid-container">
+    <div class="faq-title col-12">
+      <h2 class="heading-color">
         Frequently Asked Questions
       </h2>
-      <p>  
+      <p class="desc-color main-desc">  
         Here are some of our FAQs. If you have any other questions you’d like 
         answered please feel free to email us.
       </p>
     </div>
 
-    <div class="faq-accordion">
-      <div class="accordion-item">
+    <div class="faq-accordion col-12">
+      <div class="accordion-item close">
         <h4 class="accordion-question">
           What is Bookmark?
         </h4>
@@ -213,7 +201,7 @@
         </p>
       </div>
 
-      <div class="accordion-item">
+      <div class="accordion-item close">
         <h4 class="accordion-question">
           How can I request a new browser?
         </h4>
@@ -225,7 +213,7 @@
         </p>
       </div>
 
-      <div class="accordion-item">
+      <div class="accordion-item close">
         <h4 class="accordion-question">
           Is there a mobile app?
         </h4>
@@ -236,7 +224,7 @@
         </p>
       </div>
 
-      <div class="accordion-item">
+      <div class="accordion-item close">
         <h4 class="accordion-question">
           What about other Chromium browsers?
         </h4>
@@ -245,40 +233,59 @@
           vitae neque eget nisl gravida pellentesque non ut velit.
         </p>
       </div>
+
     </div>
 
-    <a href="" id="faq-link" class="blue-link">More Info</a>
+    <a href="" id="faq-link" class="blue-link col-12">More Info</a>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="newsletter-container">
-      <span>
-        35,000+ already joined
-      </span>
-      <h2 class="newletter-heading">
-        Stay up-to-date with what we’re doing
-      </h2>
 
-      <form action="submit">
-        <input type="email" name="email" id="input-newsletter">
-        <a href="" id="contact-us">Contact Us</a>
-      </form>
+    <div class="newsletter-bg">
+      <div class="newsletter-container grid-container">
+        <div class="newsletter-text col-12">
+          <span>
+            35,000+ already joined
+          </span>
+          <h2 class="newsletter-heading">
+            Stay up-to-date with what we’re doing
+          </h2>
+        </div>
+  
+        <form action="submit" name="newsletter">
+          <div class="input-container">
+            <input type="email" name="email" placeholder = "Enter your email address" id="input-newsletter">
+            <div class="error"></div>
+          </div>
+          <button id="contact-us">Contact Us</button>
+        </form>
+      </div>
     </div>
 
-    <div class="footer-links">
-      <a href=""><img src="images/logo-bookmark.svg" alt=""></a>
-      <a href="">Features</a>
-      <a href="">Pricing</a>
-      <a href="">Contact</a>
-      <a href=""><img src="images/icon-facebook.svg" alt=""></a>
-      <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+    <div class="footer-bg">
+      <div class="footer-links grid-container">
+        <a href="" class="col-1"><img src="images/logo-bookmark.svg" alt="" id="logo"></a>
+        <div class="footer-col-links col-12">
+          <a href="">Features</a>
+          <a href="">Pricing</a>
+          <a href="">Contact</a>
+        </div>
+        <div class="social-link col-12">
+          <a href=""><img src="images/icon-facebook.svg" alt=""></a>
+          <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+        </div>
+      </div>
     </div>
 
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/Krrish105">Karishma Garg</a>.
     </p>
   </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+
 </body>
 </html>
