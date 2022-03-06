@@ -170,7 +170,7 @@ nav.active{
 }
 .blue-link:hover, .white-link:hover{
     background-color: transparent;
-    border: 1px solid var(--Soft-Blue);
+    box-shadow: inset 0 0 0 3px var(--Soft-Blue);
     color: var(--Soft-Blue);
 }
 .blue-bg{
@@ -313,7 +313,7 @@ main.grid-container{
     }
     .accordion-question::after{
         content: url("images/icon-arrow.svg");
-        filter: invert(46%) sepia(18%) saturate(7458%) hue-rotate(331deg) brightness(108%) contrast(96%);
+        filter: invert(55%) sepia(39%) saturate(5864%) hue-rotate(327deg) brightness(99%) contrast(100%);
         transform: rotate(180deg);
     }
 }
@@ -379,10 +379,11 @@ form{
     border-radius: 8px;
     max-width: 500px;
     border: 0;
+    cursor: pointer;
 }
 #contact-us:hover{
     background-color: white;
-    border: 1px solid var(--Soft-Red);
+    box-shadow: inset 0 0 0 3px var(--Soft-Red);
     color: var(--Soft-Red);
 }
 
@@ -417,6 +418,9 @@ form{
     flex-direction: row;
     justify-content: center;
     gap: 50px;
+}
+.social-link a:hover img{
+    filter: invert(55%) sepia(39%) saturate(5864%) hue-rotate(327deg) brightness(99%) contrast(100%);
 }
 
 /* ========= attribution ========= */
@@ -488,7 +492,7 @@ form{
        } 
     }
     #login:hover{
-        border: 1.5px solid var(--Soft-Red);
+        box-shadow: inset 0 0 0 3px var(--Soft-Red);
         background-color: transparent;
         a{
             color: var(--Soft-Red);
