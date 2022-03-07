@@ -96,15 +96,18 @@ a:hover {
   grid-column: span 12;
 }
 
+.nav-bg {
+  background-color: white;
+}
+
 nav {
   position: fixed;
-  background-color: white;
   top: 0;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   width: 100%;
-  padding: 0 30px;
+  padding: 0;
 }
 
 nav #social-nav {
@@ -113,7 +116,7 @@ nav #social-nav {
 
 nav.active {
   background-color: rgba(37, 43, 70, 0.95);
-  padding: 40px 20px 0;
+  padding: 10px 20px 0;
 }
 
 nav.active img {
@@ -306,6 +309,7 @@ main.grid-container {
   border-top: 0.5px solid var(--Grayish-Blue);
   border-bottom: 0.1px solid var(--Grayish-Blue);
   color: var(--Very-Dark-Blue);
+  cursor: pointer;
 }
 
 .main-col-title:hover {
@@ -542,8 +546,6 @@ form {
 }
 
 #logo {
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
   position: relative;
   z-index: 0;
 }
@@ -575,11 +577,11 @@ form {
           filter: invert(55%) sepia(39%) saturate(5864%) hue-rotate(327deg) brightness(99%) contrast(100%);
 }
 
-/* ========= attribution ========= */
+/* ========= Attribution ========= */
 .attribution {
   font-size: 1rem;
   text-align: center;
-  padding: 8px;
+  padding: 5px;
 }
 
 .attribution a {
