@@ -61,7 +61,7 @@ const tabChanging = (e) => {
     tab.innerHTML = '';
     tab.insertAdjacentHTML(
       'beforeend',
-      ` <img src="${img}" alt="" class="header-img col-6">
+      ` <img src="${img}" alt="" class="header-img col-6" height="350px" width="300">
         <div class="blue-bg main-blue-bg"></div>
         <div class="main-col-text col-6" id="bookmarking">
             <h2 class="main-col-heading heading-color">
